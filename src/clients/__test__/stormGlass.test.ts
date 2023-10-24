@@ -16,7 +16,7 @@ describe('StormGlass client', () => {
     const lng = 151.289824;
 
     mockedRequest.get.mockResolvedValue({
-      data: stromGlassWeather3HoursFixture,
+      data: stromGlassWeather3HoursFixture ,
     } as HTTPUtil.Response);
 
     const stormGlass = new StormGlass(mockedRequest);
